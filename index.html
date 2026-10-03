@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caylin Lowery | Portfolio</title>
+
+    <title>Caylin Lowery | Marketing Portfolio</title>
 
     <style>
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -14,26 +16,54 @@
             color: #222;
         }
 
+        /* TOP SECTION */
+
         header {
             background-color: #222;
             color: white;
-            text-align: center;
-            padding: 70px 20px;
+            padding: 65px 25px;
         }
 
-        header h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
+        .hero {
+            max-width: 950px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
         }
 
-        header p {
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 50px;
+            margin: 0 0 12px;
+        }
+
+        .hero-text p {
             font-size: 20px;
+            line-height: 1.5;
+            margin: 0;
         }
+
+        /* HEADSHOT */
+
+        .headshot {
+            width: 230px;
+            height: 230px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+        }
+
+        /* MAIN PAGE */
 
         main {
             max-width: 950px;
             margin: auto;
-            padding: 40px 25px;
+            padding: 45px 25px;
         }
 
         section {
@@ -46,10 +76,14 @@
             padding-bottom: 10px;
         }
 
+        /* PERSONAL STATEMENT */
+
         .statement {
             font-size: 20px;
             line-height: 1.7;
         }
+
+        /* SKILLS */
 
         .skills {
             display: flex;
@@ -64,26 +98,44 @@
             border-radius: 20px;
         }
 
+        /* PROJECTS */
+
         .project {
             background-color: white;
-            padding: 25px;
-            margin-top: 20px;
-            border-radius: 10px;
+            padding: 28px;
+            margin-top: 25px;
+            border-radius: 12px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
         .project h3 {
             margin-top: 0;
+            font-size: 23px;
         }
 
         .project p {
-            line-height: 1.6;
+            line-height: 1.7;
+            font-size: 17px;
         }
 
+        /* VIEW REEL BUTTON */
+
         .project a {
-            color: #222;
+            display: inline-block;
+            margin-top: 8px;
+            background-color: #222;
+            color: white;
+            text-decoration: none;
             font-weight: bold;
+            padding: 11px 20px;
+            border-radius: 6px;
         }
+
+        .project a:hover {
+            background-color: #555;
+        }
+
+        /* FOOTER */
 
         footer {
             background-color: #222;
@@ -91,96 +143,184 @@
             text-align: center;
             padding: 25px;
         }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 38px;
+            }
+
+            .headshot {
+                width: 190px;
+                height: 190px;
+            }
+
+        }
+
     </style>
+
 </head>
+
 
 <body>
 
+    <!-- INTRODUCTION -->
+
     <header>
-        <h1>Caylin Lowery</h1>
-        <p>Marketing Student | Social Media Manager | Digital Content Creator</p>
+
+        <div class="hero">
+
+            <div class="hero-text">
+
+                <h1>Caylin Lowery</h1>
+
+                <p>
+                    Marketing Student | Social Media Manager |
+                    Digital Content Creator
+                </p>
+
+            </div>
+
+            <img
+                src="DSC01228.JPG"
+                alt="Caylin Lowery Headshot"
+                class="headshot"
+            >
+
+        </div>
+
     </header>
+
 
     <main>
 
+
         <!-- PERSONAL STATEMENT -->
+
         <section>
+
             <h2>Personal Statement</h2>
 
             <p class="statement">
-                I am a marketing student and digital content creator passionate about
-                combining creativity, strategy, and authentic storytelling to help
-                brands connect with their audiences.
+                I am a marketing student and digital content creator passionate
+                about combining creativity, strategy, and authentic storytelling
+                to help brands connect with their audiences.
             </p>
+
         </section>
 
 
         <!-- SKILLS -->
+
         <section>
+
             <h2>Skills</h2>
 
             <div class="skills">
+
                 <span class="skill">Digital Marketing</span>
+
                 <span class="skill">Social Media Management</span>
+
                 <span class="skill">Content Creation</span>
+
                 <span class="skill">Photography</span>
+
                 <span class="skill">Videography</span>
+
                 <span class="skill">Video Editing</span>
+
                 <span class="skill">Canva</span>
+
                 <span class="skill">Brand Strategy</span>
+
             </div>
+
         </section>
 
 
-        <!-- PROJECTS -->
+        <!-- FEATURED PROJECTS -->
+
         <section>
+
             <h2>Featured Projects</h2>
 
+
+            <!-- PROJECT ONE -->
+
             <div class="project">
-                <h3>F45 South Edison Social Media Reel #1</h3>
+
+                <h3>Trainer Tip Tuesday | F45 South Edison</h3>
 
                 <p>
-                    Created and edited an Instagram Reel for F45 Training South Edison
-                    as part of my role as Social Media Manager. The content was designed
-                    to showcase the studio experience and create engaging social media
-                    content for current and prospective members.
+                    Created a Trainer Tip Tuesday Reel for F45 Training South
+                    Edison to educate members on proper exercise form and
+                    technique. The content provides members with helpful fitness
+                    tips while creating informative and engaging social media
+                    content for the studio.
                 </p>
 
-                <a href="PASTE-REEL-LINK-HERE" target="_blank">
+                <a
+                    href="https://www.instagram.com/reel/DX-hXs6Baqw/?hl=en"
+                    target="_blank">
                     View Reel
                 </a>
+
             </div>
 
 
+            <!-- PROJECT TWO -->
+
             <div class="project">
-                <h3>F45 South Edison Social Media Reel #2</h3>
+
+                <h3>Viral Dancing Challenge | F45 South Edison</h3>
 
                 <p>
-                    Produced short-form video content for F45 Training South Edison
-                    to highlight the brand, its members, and the energy of the studio.
-                    I planned, filmed, and edited the content for use on social media.
+                    Created a dancing challenge Reel to engage the F45 South
+                    Edison community and show viewers that the studio is more
+                    than just a gym. The Reel highlighted the fun and energetic
+                    culture of the F45 community and gained more than 15,000
+                    views on Instagram.
                 </p>
 
-                <a href="PASTE-REEL-LINK-HERE" target="_blank">
+                <a
+                    href="https://www.instagram.com/p/DQjs21yAPEi/?hl=en"
+                    target="_blank">
                     View Reel
                 </a>
+
             </div>
 
 
+            <!-- PROJECT THREE -->
+
             <div class="project">
-                <h3>F45 South Edison Social Media Reel #3</h3>
+
+                <h3>Pilates Event | F45 South Edison</h3>
 
                 <p>
-                    Developed an engaging Instagram Reel as part of F45 South Edison's
-                    social media strategy. The project demonstrates my experience with
-                    content creation, video editing, and creating digital content that
-                    aligns with a brand's identity.
+                    Created a promotional Reel highlighting a Pilates event I
+                    organized at F45 South Edison. The content showcased the
+                    event and demonstrated to our audience that the studio
+                    offers fitness experiences beyond traditional strength
+                    training classes.
                 </p>
 
-                <a href="PASTE-REEL-LINK-HERE" target="_blank">
+                <a
+                    href="https://www.instagram.com/reel/DZnjKFNhD6w/?hl=en"
+                    target="_blank">
                     View Reel
                 </a>
+
             </div>
+
 
         </section>
 
@@ -188,8 +328,11 @@
 
 
     <footer>
+
         <p>© 2026 Caylin Lowery | Marketing Portfolio</p>
+
     </footer>
+
 
 </body>
 
